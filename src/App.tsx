@@ -1,30 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Social from './components/Social'
-import Footer from './components/Footer'
-import Home from './pages/Home'
-import Categories from './pages/Categories'
-import Foods from './pages/Foods'
-import FoodSearch from './pages/FoodSearch'
-import CategoryFoods from './pages/CategoryFoods'
-import Order from './pages/Order'
-import "./App.css";
+import './App.css'
 
 function App() {
+
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/categories" element={<Categories />} />
-        <Route path="/foods" element={<Foods />} />
-        <Route path="/food-search" element={<FoodSearch />} />
-        <Route path="/category-foods" element={<CategoryFoods />} />
-        <Route path="/order" element={<Order />} />
-      </Routes>
-      <Social />
-      <Footer />
-    </Router>
+    <div className="p-2">
+      <h1 className="text-3xl p-2 bg-red-50 border border-red-700 text-red-500 font-bold underline">
+        Hello world!
+      </h1>
+    </div>
   )
 }
 
